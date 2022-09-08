@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fitline</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+<body>
+<section id="form-otpravok" class="content">
+            <h1>Персональный план питания</h1>
+            <p>
+                Важно уделять внимание не только физическим упражнениям, но и полноценному питанию. Заполните анкету и мы пришлем вам план питания на месяц с учетом ваших особенностей и образа жизни. 
+            </p>
+            <form>
+                <div class="main-form">
+                    <div>
+                    
+                        <input type="text"placeholder=" Введите Имя" name="name" id="name">
+                    </div>
+                    <div>
+                       
+                        <input type="text"placeholder=" Введите номер телефона" name="tel" id="number">
+                    </div>
+                </div>
+                <div class="main-form1">
+                    <div>
+                      
+                        <input type="email"placeholder=" Введите E-mail" name="email" id="email">
+                    </div>
+                </div>
+                <div>
+                    <p>Ваша цель</p>
+                    <div class="main-form2">
+                        <input type="radio" name="cell" id="cell1" checked>
+                        <input type="radio" name="cell" id="cell2">
+                        <input type="radio" name="cell" id="cell3">
+                        <label for="cell1" class="da"></label>
+                        <p>Снижение веса</p>
+                        <label for="cell2" class="da"></label>
+                        <p>Набор массы</p>
+                        <label for="cell3"class="da"></label>
+                        <p>Другая цель</p>
+                    </div>
+                </div>
+                <div class="main-form2">
+                    <input type="checkbox" name="gol" id="cell4">
+                    <label for="cell4" class="da1"></label>
+                    <p>Я согласен на обработку моих персональных данных</p>
+                </div>
+            </form>
+      </section>
+        <input type="submit" style="height: auto" onclick="SendMessage()" id="btn">
+  
+    <script type="text/javascript">
+        function SendMessage() {
+          const inputname = document.getElementById("name");
+          const inputemail = document.getElementById("email");
+          const inputnumber = document.getElementById("number");
+      
+      if (inputname.value == "") {
+inputname.style.borderColor = "red";}
+
+if (inputemail.value == "") {
+inputemail.style.borderColor = "red";}
+
+if (inputnumber.value == "") {
+inputnumber.style.borderColor = "red";}
+
+}
+      </script>
+
+<footer>
+<script src="assets/index.js" type="text/javascript"></script>
+</footer>
+</body>
+</html>
